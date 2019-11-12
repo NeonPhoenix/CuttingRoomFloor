@@ -1,0 +1,13 @@
+{
+  "item.mcrf.steel_ingot": "Steel Ingot",
+
+  "item.mcrf.steel_axe": "Steel Axe",
+  "item.mcrf.steel_hoe": "Steel Hoe",
+  "item.mcrf.steel_pickaxe": "Steel Pickaxe",
+  "item.mcrf.steel_shovel": "Steel Shovel",
+  "item.mcrf.steel_sword": "Steel Sword",
+
+  "block.mcrf.nether_gold_ore": "Nether Gold Ore",
+
+  "itemGroup.mcrf": "Cutting Room Floor"
+}

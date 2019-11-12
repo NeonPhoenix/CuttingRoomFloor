@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures":
+  {
+    "all": "mcrf:block/nether_gold_ore"
+  }
+}
