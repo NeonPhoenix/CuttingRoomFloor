@@ -19,5 +19,7 @@ public class ItemList
     public static Item steel_leggings;
     public static Item steel_boots;
 
+    public static Item red_mossy_cobblestone;
+    public static Item red_mossy_stone_bricks;
     public static Item nether_gold_ore;
 }

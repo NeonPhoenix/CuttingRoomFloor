@@ -43,6 +43,8 @@ public class RegistryEvents
                         ItemList.steel_leggings = new ArmorItem(ArmorMaterials.STEEL, EquipmentSlotType.LEGS, new Item.Properties().group(creativeTab)).setRegistryName(location("steel_leggings")),
                         ItemList.steel_boots = new ArmorItem(ArmorMaterials.STEEL, EquipmentSlotType.FEET, new Item.Properties().group(creativeTab)).setRegistryName(location("steel_boots")),
 
+                        ItemList.red_mossy_cobblestone = new BlockItem(BlockList.red_mossy_cobblestone, new Item.Properties().group(creativeTab)).setRegistryName(BlockList.red_mossy_cobblestone.getRegistryName()),
+                        ItemList.red_mossy_stone_bricks = new BlockItem(BlockList.red_mossy_stone_bricks, new Item.Properties().group(creativeTab)).setRegistryName(BlockList.red_mossy_stone_bricks.getRegistryName()),
                         ItemList.nether_gold_ore = new BlockItem(BlockList.nether_gold_ore, new Item.Properties().group(creativeTab)).setRegistryName(BlockList.nether_gold_ore.getRegistryName())
                 );
 
@@ -55,11 +57,12 @@ public class RegistryEvents
         event.getRegistry().registerAll
                 (
                         BlockList.steel_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.METAL)).setRegistryName(location("steel_block")),
-
+                        BlockList.red_mossy_cobblestone = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)).setRegistryName(location("red_mossy_cobblestone")),
+                        BlockList.red_mossy_stone_bricks = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)).setRegistryName(location("red_mossy_stone_bricks")),
                         BlockList.nether_gold_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)).setRegistryName(location("nether_gold_ore"))
                 );
 
-        log.info("Items registered.");
+        log.info("Blocks registered.");
     }
 
     private static ResourceLocation location(String name)
