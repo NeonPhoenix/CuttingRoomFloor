@@ -20,7 +20,9 @@ build
 # other
 eclipse
 run
-.bat
+.gitignore
+.gitattributes
+*.txt
 
 # Files from Forge MDK
 forge*changelog.txt
