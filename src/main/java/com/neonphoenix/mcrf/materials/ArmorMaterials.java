@@ -12,7 +12,7 @@ import org.lwjgl.system.CallbackI;
 
 public enum ArmorMaterials implements IArmorMaterial
 {
-    STEEL("steel", 400, new int[] {8, 10, 9, 7}, 25, ItemList.steel_ingot, "item.armor.equip_iron", 0.0f);
+    STEEL("steel", 25, new int[] {2, 5, 6, 2}, 9, "item.armor.equip_iron", 1.0f, ItemList.steel_ingot);
 
     private static final int[] max_damage_array = new int[] {13, 15, 16, 11};
 
@@ -22,7 +22,7 @@ public enum ArmorMaterials implements IArmorMaterial
     private float toughness;
     private Item repairMaterial;
 
-    ArmorMaterials(String name, int durability, int[] damageReductionAmount, int enchantability, Item repairMaterial, String equipSound, float toughness)
+    ArmorMaterials(String name, int durability, int[] damageReductionAmount, int enchantability, String equipSound, float toughness, Item repairMaterial)
     {
         this.name = name;
         this.durability = durability;

@@ -7,13 +7,13 @@ import net.minecraft.item.crafting.Ingredient;
 
 public enum ToolMaterials implements IItemTier
 {
-    STEEL(10.0f, 9.0f, 800, 3, 25, ItemList.steel_ingot);
+    STEEL(3, 1125, 5.5f, 2.5f, 12, ItemList.steel_ingot);
 
     private float attackDamage, efficiency;
     private int duriability, harvestLevel, enchantability;
     private Item repairMaterial;
 
-    ToolMaterials(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial)
+    ToolMaterials(int harvestLevel, int durability, float efficiency, float attackDamage, int enchantability, Item repairMaterial)
     {
         this.attackDamage = attackDamage;
         this.efficiency = efficiency;
