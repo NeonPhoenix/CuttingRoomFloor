@@ -4,7 +4,9 @@ import net.minecraft.item.Item;
 
 public class ItemList
 {
+    public static Item steel_nugget;
     public static Item steel_ingot;
+    public static Item steel_block;
 
     public static Item steel_axe;
     public static Item steel_hoe;

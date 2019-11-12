@@ -1,0 +1,6 @@
+{
+  "variants":
+  {
+    "": {"model": "mcrf:block/steel_block"}
+  }
+}
