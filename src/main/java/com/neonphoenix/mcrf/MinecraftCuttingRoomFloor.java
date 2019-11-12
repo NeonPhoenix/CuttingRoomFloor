@@ -5,6 +5,7 @@ import com.neonphoenix.mcrf.materials.ArmorMaterials;
 import com.neonphoenix.mcrf.materials.ToolMaterials;
 import com.neonphoenix.mcrf.util.*;
 
+import com.neonphoenix.mcrf.world.OreGeneration;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -41,6 +42,8 @@ public class MinecraftCuttingRoomFloor
 
     private void setup(final FMLCommonSetupEvent event)
     {
+        OreGeneration.setupOreGeneration();
+
         log.info("Setup method registered.");
     }
 
