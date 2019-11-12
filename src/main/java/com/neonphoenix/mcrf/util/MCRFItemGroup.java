@@ -1,4 +1,4 @@
-package com.neonphoenix.mcrf;
+package com.neonphoenix.mcrf.util;
 
 import com.neonphoenix.mcrf.lists.BlockList;
 import net.minecraft.item.Item;
@@ -15,6 +15,6 @@ public class MCRFItemGroup extends ItemGroup
     @Override
     public ItemStack createIcon()
     {
-        return new ItemStack(Item.BLOCK_TO_ITEM.get(BlockList.netherGoldOre));
+        return new ItemStack(Item.BLOCK_TO_ITEM.get(BlockList.nether_gold_ore));
     }
 }

@@ -4,5 +4,5 @@ import net.minecraft.block.Block;
 
 public class BlockList
 {
-    public static Block netherGoldOre;
+    public static Block nether_gold_ore;
 }

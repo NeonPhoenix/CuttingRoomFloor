@@ -1,18 +1,19 @@
-package com.neonphoenix.mcrf.lists;
+package com.neonphoenix.mcrf.materials;
 
+import com.neonphoenix.mcrf.lists.ItemList;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 
-public enum ToolMaterialList implements IItemTier
+public enum ToolMaterials implements IItemTier
 {
-    steel(10.0f, 9.0f, 800, 3, 25, ItemList.steelIngot);
+    STEEL(10.0f, 9.0f, 800, 3, 25, ItemList.steel_ingot);
 
     private float attackDamage, efficiency;
     private int duriability, harvestLevel, enchantability;
     private Item repairMaterial;
 
-    ToolMaterialList(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial)
+    ToolMaterials(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial)
     {
         this.attackDamage = attackDamage;
         this.efficiency = efficiency;

@@ -1,23 +1,23 @@
 package com.neonphoenix.mcrf;
 
-import com.neonphoenix.mcrf.lists.BlockList;
-import com.neonphoenix.mcrf.lists.ItemList;
-import com.neonphoenix.mcrf.lists.ToolMaterialList;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import com.neonphoenix.mcrf.lists.*;
+import com.neonphoenix.mcrf.materials.ArmorMaterials;
+import com.neonphoenix.mcrf.materials.ToolMaterials;
+import com.neonphoenix.mcrf.util.*;
+
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 @Mod("mcrf")
 public class MinecraftCuttingRoomFloor
@@ -25,7 +25,7 @@ public class MinecraftCuttingRoomFloor
     public static MinecraftCuttingRoomFloor instance;
     public static final String modid = "mcrf";
 
-    public static final ItemGroup mcrfTab = new MCRFItemGroup();
+    public static final ItemGroup mcrfCreativeTab = new MCRFItemGroup();
 
     private static final Logger log = LogManager.getLogger(modid);
 
@@ -57,19 +57,20 @@ public class MinecraftCuttingRoomFloor
         {
             event.getRegistry().registerAll
                     (
-                        ItemList.steelIngot = new Item(new Item.Properties().group(mcrfTab)).setRegistryName(location("steel_ingot")),
+                        ItemList.steel_ingot = new Item(new Item.Properties().group(mcrfCreativeTab)).setRegistryName(location("steel_ingot")),
 
-                        ItemList.steelAxe = new AxeItem(ToolMaterialList.steel, -1.0f, 6.0f, new Item.Properties().group(mcrfTab)).setRegistryName(location("steel_axe")),
+                        ItemList.steel_axe = new AxeItem(ToolMaterials.STEEL, -1.0f, 6.0f, new Item.Properties().group(mcrfCreativeTab)).setRegistryName(location("steel_axe")),
+                        ItemList.steel_hoe = new HoeItem(ToolMaterials.STEEL, 0.0f, new Item.Properties().group(mcrfCreativeTab)).setRegistryName(location("steel_hoe")),
+                        ItemList.steel_pickaxe = new PickaxeItem(ToolMaterials.STEEL, 0, 0.0f, new Item.Properties().group(mcrfCreativeTab)).setRegistryName(location("steel_pickaxe")),
+                        ItemList.steel_shovel = new ShovelItem(ToolMaterials.STEEL, 0.0f, 0.0f, new Item.Properties().group(mcrfCreativeTab)).setRegistryName(location("steel_shovel")),
+                        ItemList.steel_sword = new SwordItem(ToolMaterials.STEEL, 0, 0.0f, new Item.Properties().group(mcrfCreativeTab)).setRegistryName(location("steel_sword")),
 
-                        ItemList.steelHoe = new HoeItem(ToolMaterialList.steel, 0.0f, new Item.Properties().group(mcrfTab)).setRegistryName(location("steel_hoe")),
+                        ItemList.steel_helmet = new ArmorItem(ArmorMaterials.STEEL, EquipmentSlotType.HEAD, new Item.Properties().group(mcrfCreativeTab)).setRegistryName(location("steel_helmet")),
+                        ItemList.steel_chestplate = new ArmorItem(ArmorMaterials.STEEL, EquipmentSlotType.CHEST, new Item.Properties().group(mcrfCreativeTab)).setRegistryName(location("steel_chestplate")),
+                        ItemList.steel_leggings = new ArmorItem(ArmorMaterials.STEEL, EquipmentSlotType.LEGS, new Item.Properties().group(mcrfCreativeTab)).setRegistryName(location("steel_leggings")),
+                        ItemList.steel_boots = new ArmorItem(ArmorMaterials.STEEL, EquipmentSlotType.FEET, new Item.Properties().group(mcrfCreativeTab)).setRegistryName(location("steel_boots")),
 
-                        ItemList.steelPickaxe = new PickaxeItem(ToolMaterialList.steel, 0, 0.0f, new Item.Properties().group(mcrfTab)).setRegistryName(location("steel_hoe")),
-
-                        ItemList.steelShovel = new ShovelItem(ToolMaterialList.steel, 0.0f, 0.0f, new Item.Properties().group(mcrfTab)).setRegistryName(location("steel_hoe")),
-
-                        ItemList.steelSword = new SwordItem(ToolMaterialList.steel, 0, 0.0f, new Item.Properties().group(mcrfTab)).setRegistryName(location("steel_hoe")),
-
-                        ItemList.netherGoldOre = new BlockItem(BlockList.netherGoldOre, new Item.Properties().group(mcrfTab)).setRegistryName(BlockList.netherGoldOre.getRegistryName())
+                        ItemList.nether_gold_ore = new BlockItem(BlockList.nether_gold_ore, new Item.Properties().group(mcrfCreativeTab)).setRegistryName(BlockList.nether_gold_ore.getRegistryName())
                     );
 
             log.info("Items registered.");
@@ -80,7 +81,7 @@ public class MinecraftCuttingRoomFloor
         {
             event.getRegistry().registerAll
                     (
-                        BlockList.netherGoldOre = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).lightValue(1).sound(SoundType.METAL)).setRegistryName(location("nether_gold_ore"))
+                        BlockList.nether_gold_ore = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).lightValue(1).sound(SoundType.METAL)).setRegistryName(location("nether_gold_ore"))
                     );
 
             log.info("Items registered.");
