@@ -1,5 +1,6 @@
 package com.neonphoenix.mcrf;
 
+import com.neonphoenix.mcrf.config.ModConfiguration;
 import com.neonphoenix.mcrf.lists.*;
 import com.neonphoenix.mcrf.materials.*;
 import com.neonphoenix.mcrf.util.*;
@@ -13,10 +14,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.*;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+import net.minecraftforge.fml.loading.FMLPaths;
 import org.apache.logging.log4j.*;
 
 @Mod("mcrf")
@@ -27,14 +31,20 @@ public class MinecraftCuttingRoomFloor
 
     public static final ItemGroup mcrfCreativeTab = new MCRFItemGroup();
 
-    private static final Logger log = LogManager.getLogger(modid);
+    public static final Logger log = LogManager.getLogger(modid);
 
     public MinecraftCuttingRoomFloor()
     {
         instance = this;
 
+        ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, ModConfiguration.server_config);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModConfiguration.client_config);
+
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientRegistries);
+
+        ModConfiguration.loadConfig(ModConfiguration.client_config, FMLPaths.CONFIGDIR.get().resolve("mcrf-client.toml").toString());
+        ModConfiguration.loadConfig(ModConfiguration.server_config, FMLPaths.CONFIGDIR.get().resolve("mcrf-server.toml").toString());
 
         MinecraftForge.EVENT_BUS.register(this);
     }
