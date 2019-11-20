@@ -1,7 +1,7 @@
 package com.neonphoenix.mcrf.world;
 
 import com.neonphoenix.mcrf.config.blocks.OreGenerationConfig;
-import com.neonphoenix.mcrf.lists.BlockList;
+import com.neonphoenix.mcrf.lists.ModdedBlocks;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage.Decoration;
 import net.minecraft.world.gen.feature.Feature;
@@ -20,7 +20,7 @@ public class OreGeneration
 
             if(OreGenerationConfig.generateNetherOre.get())
             {
-                    biome.addFeature(Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NETHERRACK, BlockList.nether_gold_ore.getDefaultState(), OreGenerationConfig.oreChance.get()), Placement.COUNT_RANGE, mcrf_ore_placement));
+                    biome.addFeature(Decoration.UNDERGROUND_ORES, Biome.createDecoratedFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.FillerBlockType.NETHERRACK, ModdedBlocks.NETHER_GOLD_ORE.getDefaultState(), OreGenerationConfig.oreChance.get()), Placement.COUNT_RANGE, mcrf_ore_placement));
             }
         }
     }

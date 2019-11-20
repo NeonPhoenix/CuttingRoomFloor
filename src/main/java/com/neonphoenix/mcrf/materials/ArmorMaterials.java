@@ -11,7 +11,7 @@ import net.minecraft.util.SoundEvent;
 
 public enum ArmorMaterials implements IArmorMaterial
 {
-    STEEL("steel", 25, new int[] {2, 5, 6, 2}, 9, "item.armor.equip_iron", 1.0f, ModdedItems.steel_ingot);
+    STEEL("steel", 25, new int[] {2, 5, 6, 2}, 9, "item.armor.equip_iron", 1.0f, ModdedItems.STEEL_INGOT);
 
     private static final int[] max_damage_array = new int[] {13, 15, 16, 11};
 

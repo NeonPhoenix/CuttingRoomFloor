@@ -1,6 +1,7 @@
 package com.neonphoenix.mcrf;
 
 import com.neonphoenix.mcrf.config.ModConfiguration;
+import com.neonphoenix.mcrf.lists.ModdedBlocks;
 import com.neonphoenix.mcrf.util.*;
 import com.neonphoenix.mcrf.world.*;
 
@@ -50,6 +51,7 @@ public class MinecraftCuttingRoomFloor
 
     private void clientRegistries(final FMLClientSetupEvent event)
     {
+        //ModdedBlocks.init(event);
         log.info("Client registries method registered.");
     }
 }
