@@ -1,6 +1,6 @@
 package com.neonphoenix.mcrf.world;
 
-import com.neonphoenix.mcrf.config.OreGenerationConfig;
+import com.neonphoenix.mcrf.config.blocks.OreGenerationConfig;
 import com.neonphoenix.mcrf.lists.BlockList;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStage.Decoration;

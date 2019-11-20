@@ -1,4 +1,4 @@
-package com.neonphoenix.mcrf.config;
+package com.neonphoenix.mcrf.config.blocks;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 

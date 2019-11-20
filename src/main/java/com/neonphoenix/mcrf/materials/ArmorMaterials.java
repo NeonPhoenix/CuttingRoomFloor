@@ -1,7 +1,7 @@
 package com.neonphoenix.mcrf.materials;
 
 import com.neonphoenix.mcrf.MinecraftCuttingRoomFloor;
-import com.neonphoenix.mcrf.lists.ItemList;
+import com.neonphoenix.mcrf.lists.ModdedItems;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.Item;
@@ -11,7 +11,7 @@ import net.minecraft.util.SoundEvent;
 
 public enum ArmorMaterials implements IArmorMaterial
 {
-    STEEL("steel", 25, new int[] {2, 5, 6, 2}, 9, "item.armor.equip_iron", 1.0f, ItemList.steel_ingot);
+    STEEL("steel", 25, new int[] {2, 5, 6, 2}, 9, "item.armor.equip_iron", 1.0f, ModdedItems.steel_ingot);
 
     private static final int[] max_damage_array = new int[] {13, 15, 16, 11};
 
