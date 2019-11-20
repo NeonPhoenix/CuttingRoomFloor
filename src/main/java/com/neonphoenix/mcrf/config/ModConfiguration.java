@@ -3,6 +3,8 @@ package com.neonphoenix.mcrf.config;
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.electronwill.nightconfig.core.io.WritingMode;
 import com.neonphoenix.mcrf.MinecraftCuttingRoomFloor;
+import com.neonphoenix.mcrf.config.blocks.OreGenerationConfig;
+import com.neonphoenix.mcrf.config.items.ExplodingArrowConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.common.Mod;
 
@@ -20,6 +22,7 @@ public class ModConfiguration
     static
     {
         OreGenerationConfig.init(server_builder, client_builder);
+        ExplodingArrowConfig.init(server_builder, client_builder);
 
         server_config = server_builder.build();
         client_config = client_builder.build();

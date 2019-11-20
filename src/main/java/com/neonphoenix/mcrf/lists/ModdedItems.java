@@ -1,8 +1,9 @@
 package com.neonphoenix.mcrf.lists;
 
+import com.neonphoenix.mcrf.items.ModArrowItem;
 import net.minecraft.item.Item;
 
-public class ItemList
+public class ModdedItems
 {
     public static Item steel_nugget;
     public static Item steel_ingot;
@@ -22,4 +23,6 @@ public class ItemList
     public static Item red_mossy_cobblestone;
     public static Item red_mossy_stone_bricks;
     public static Item nether_gold_ore;
+
+    public static ModArrowItem EXPLODING_ARROW;
 }
