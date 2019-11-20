@@ -1,5 +1,8 @@
 package com.neonphoenix.mcrf.items;
 
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.*;
 import net.minecraft.entity.projectile.*;
@@ -29,6 +32,7 @@ public class ModArrowItem extends ArrowItem
     @Override
     public boolean isInfinite(final ItemStack stack, final ItemStack bow, final PlayerEntity player)
     {
-        return true;
+        int enchant = EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, bow);
+        return enchant <= 0 ? false : this.getClass() == ModArrowItem.class;
     }
 }
