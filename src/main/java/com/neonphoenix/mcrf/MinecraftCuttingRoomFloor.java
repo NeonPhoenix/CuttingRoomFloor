@@ -1,24 +1,25 @@
 package com.neonphoenix.mcrf;
 
 import com.neonphoenix.mcrf.config.ModConfiguration;
-import com.neonphoenix.mcrf.util.*;
-
+import com.neonphoenix.mcrf.util.MCRFItemGroup;
 import com.neonphoenix.mcrf.world.gen.OreGeneration;
-import net.minecraft.item.*;
+
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.*;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import net.minecraftforge.fml.loading.FMLPaths;
-import org.apache.logging.log4j.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Mod("mcrf")
 public class MinecraftCuttingRoomFloor
 {
-    public static MinecraftCuttingRoomFloor instance;
     public static final String modid = "mcrf";
 
     public static final ItemGroup mcrfCreativeTab = new MCRFItemGroup();
@@ -27,8 +28,6 @@ public class MinecraftCuttingRoomFloor
 
     public MinecraftCuttingRoomFloor()
     {
-        instance = this;
-
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, ModConfiguration.server_config);
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, ModConfiguration.client_config);
 
@@ -41,14 +40,14 @@ public class MinecraftCuttingRoomFloor
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
+    private void setup(final FMLCommonSetupEvent commonSetupEvent)
     {
         OreGeneration.init();
 
         log.info("Setup method registered.");
     }
 
-    private void clientRegistries(final FMLClientSetupEvent event)
+    private void clientRegistries(final FMLClientSetupEvent clientSetupEvent)
     {
         log.info("Client registries method registered.");
     }
