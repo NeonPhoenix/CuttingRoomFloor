@@ -43,14 +43,13 @@ public class MinecraftCuttingRoomFloor
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        OreGeneration.setupOreGeneration();
+        OreGeneration.init();
 
         log.info("Setup method registered.");
     }
 
     private void clientRegistries(final FMLClientSetupEvent event)
     {
-        //ModdedBlocks.init(event);
         log.info("Client registries method registered.");
     }
 }
