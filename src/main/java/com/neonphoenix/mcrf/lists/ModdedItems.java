@@ -20,6 +20,8 @@ public class ModdedItems
     public static Item STEEL_LEGGINGS;
     public static Item STEEL_BOOTS;
 
+    public static Item RED_MOSS;
+
     public static Item RED_MOSSY_COBBLESTONE;
     public static Item RED_MOSSY_STONEBRICK;
     public static Item NETHER_GOLD_ORE;

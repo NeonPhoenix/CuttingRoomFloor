@@ -46,6 +46,8 @@ public class RegistryEvents
 
                         ModdedItems.EXPLODING_ARROW = (ModArrowItem) new ModArrowItem(ExplodingArrowEntity::new, defaultItemProperties()).setRegistryName("exploding_arrow"),
 
+                        ModdedItems.RED_MOSS = new Item(new Item.Properties().group(creativeTab)).setRegistryName(location("red_moss")),
+
                         ModdedItems.STEEL_BLOCK = new BlockItem(ModdedBlocks.STEEL_BLOCK, new Item.Properties().group(creativeTab)).setRegistryName(ModdedBlocks.STEEL_BLOCK.getRegistryName()),
                         ModdedItems.RED_MOSSY_COBBLESTONE = new BlockItem(ModdedBlocks.RED_MOSSY_COBBLESTONE, new Item.Properties().group(creativeTab)).setRegistryName(ModdedBlocks.RED_MOSSY_COBBLESTONE.getRegistryName()),
                         ModdedItems.RED_MOSSY_STONEBRICK = new BlockItem(ModdedBlocks.RED_MOSSY_STONEBRICK, new Item.Properties().group(creativeTab)).setRegistryName(ModdedBlocks.RED_MOSSY_STONEBRICK.getRegistryName()),
