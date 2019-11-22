@@ -1,13 +1,13 @@
 package com.neonphoenix.mcrf.materials;
 
-import com.neonphoenix.mcrf.lists.ModdedItems;
+import com.neonphoenix.mcrf.lists.MCRFItems;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
 
 public enum ToolMaterials implements IItemTier
 {
-    STEEL(3, 1125, 5.5f, 2.5f, 12, ModdedItems.STEEL_INGOT);
+    STEEL(3, 1125, 5.5f, 2.5f, 12, MCRFItems.STEEL_INGOT);
 
     private float attackDamage, efficiency;
     private int duriability, harvestLevel, enchantability;

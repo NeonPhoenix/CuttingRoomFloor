@@ -1,13 +1,12 @@
 package com.neonphoenix.mcrf.entities;
 
-import com.neonphoenix.mcrf.lists.ModdedItems;
+import com.neonphoenix.mcrf.lists.MCRFItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.*;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
@@ -28,7 +27,7 @@ public class ExplodingArrowEntity extends ArrowEntity
 
     @Override
     protected ItemStack getArrowStack() {
-        return new ItemStack(ModdedItems.EXPLODING_ARROW);
+        return new ItemStack(MCRFItems.EXPLODING_ARROW);
     }
 
     @Override

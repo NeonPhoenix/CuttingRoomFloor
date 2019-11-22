@@ -1,6 +1,6 @@
 package com.neonphoenix.mcrf.util;
 
-import com.neonphoenix.mcrf.lists.ModdedBlocks;
+import com.neonphoenix.mcrf.lists.MCRFBlocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -15,6 +15,6 @@ public class MCRFItemGroup extends ItemGroup
     @Override
     public ItemStack createIcon()
     {
-        return new ItemStack(Item.BLOCK_TO_ITEM.get(ModdedBlocks.NETHER_GOLD_ORE));
+        return new ItemStack(Item.BLOCK_TO_ITEM.get(MCRFBlocks.NETHER_GOLD_ORE));
     }
 }
