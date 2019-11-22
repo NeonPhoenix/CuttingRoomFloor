@@ -1,9 +1,12 @@
 package com.neonphoenix.mcrf.lists;
 
+import com.neonphoenix.mcrf.MinecraftCuttingRoomFloor;
 import com.neonphoenix.mcrf.items.ModArrowItem;
 import net.minecraft.item.*;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.ForgeRegistries;
 
-public class ModdedItems
+public class MCRFItems
 {
     public static Item STEEL_NUGGET;
     public static Item STEEL_INGOT;
@@ -21,10 +24,6 @@ public class ModdedItems
     public static Item STEEL_BOOTS;
 
     public static Item RED_MOSS;
-
-    public static Item RED_MOSSY_COBBLESTONE;
-    public static Item RED_MOSSY_STONEBRICK;
-    public static Item NETHER_GOLD_ORE;
 
     public static ModArrowItem EXPLODING_ARROW;
 }
