@@ -1,10 +1,9 @@
 package com.neonphoenix.mcrf;
 
 import com.neonphoenix.mcrf.config.ModConfiguration;
-import com.neonphoenix.mcrf.lists.ModdedBlocks;
 import com.neonphoenix.mcrf.util.*;
-import com.neonphoenix.mcrf.world.*;
 
+import com.neonphoenix.mcrf.world.gen.OreGeneration;
 import net.minecraft.item.*;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.ModLoadingContext;
