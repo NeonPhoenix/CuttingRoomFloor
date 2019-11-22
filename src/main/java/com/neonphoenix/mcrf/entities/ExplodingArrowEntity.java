@@ -7,7 +7,10 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.math.*;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.util.math.EntityRayTraceResult;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
@@ -40,7 +43,6 @@ public class ExplodingArrowEntity extends ArrowEntity
             final Entity entity = ((EntityRayTraceResult)rayTraceResult).getEntity();
 
             entity.attackEntityFrom(DamageSource.causeExplosionDamage(this.world.createExplosion(entity, entity.getPosition().getX(), entity.getPosition().getY() + entity.getHeight(), entity.getPosition().getZ(), 4.0F, Explosion.Mode.BREAK)), 8.0F);
-            //DamageSource.causeExplosionDamage(this.world.createExplosion(entity, entity.getPosition().getX(), entity.getPosition().getY() + entity.getHeight(), entity.getPosition().getZ(), 4.0F, Explosion.Mode.BREAK));
 
             this.remove();
         }

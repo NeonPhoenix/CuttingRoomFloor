@@ -2,12 +2,22 @@ package com.neonphoenix.mcrf.config.blocks;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 
-public class OreGenConfig
+public abstract class OreGenConfig
 {
-    public static ForgeConfigSpec.BooleanValue enableGoldOre, enableMossOre;
+    public static ForgeConfigSpec.BooleanValue enableGoldOre;
+    public static ForgeConfigSpec.BooleanValue enableMossOre;
 
-    public static ForgeConfigSpec.IntValue oreGoldChance, oreGoldCount, oreGoldBottomOffset, oreGoldTopOffset, oreGoldMaximum;
-    public static ForgeConfigSpec.IntValue oreMossChance, oreMossCount, oreMossBottomOffset, oreMossTopOffset, oreMossMaximum;
+    public static ForgeConfigSpec.IntValue oreGoldChance;
+    public static ForgeConfigSpec.IntValue oreGoldCount;
+    public static ForgeConfigSpec.IntValue oreGoldBottomOffset;
+    public static ForgeConfigSpec.IntValue oreGoldTopOffset;
+    public static ForgeConfigSpec.IntValue oreGoldMaximum;
+
+    public static ForgeConfigSpec.IntValue oreMossChance;
+    public static ForgeConfigSpec.IntValue oreMossCount;
+    public static ForgeConfigSpec.IntValue oreMossBottomOffset;
+    public static ForgeConfigSpec.IntValue oreMossTopOffset;
+    public static ForgeConfigSpec.IntValue oreMossMaximum;
 
     public static void init(ForgeConfigSpec.Builder server, ForgeConfigSpec.Builder client)
     {

@@ -15,8 +15,10 @@ public enum ArmorMaterials implements IArmorMaterial
 
     private static final int[] max_damage_array = new int[] {13, 15, 16, 11};
 
-    private String name, equipSound;
-    private int durability, enchantability;
+    private String name;
+    private String equipSound;
+    private int durability;
+    private int enchantability;
     private int[] damageReductionAmount;
     private float toughness;
     private Item repairMaterial;

@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.Mod;
 import java.io.File;
 
 @Mod.EventBusSubscriber
-public class ModConfiguration
+public abstract class ModConfiguration
 {
     private static final ForgeConfigSpec.Builder server_builder = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec server_config;

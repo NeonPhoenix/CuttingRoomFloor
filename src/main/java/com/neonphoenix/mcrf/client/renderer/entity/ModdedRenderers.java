@@ -5,7 +5,7 @@ import com.neonphoenix.mcrf.entities.ExplodingArrowEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
-public class ModdedRenderers
+public abstract class ModdedRenderers
 {
     public static void register()
     {

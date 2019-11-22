@@ -9,8 +9,11 @@ public enum ToolMaterials implements IItemTier
 {
     STEEL(3, 1125, 5.5f, 2.5f, 12, MCRFItems.STEEL_INGOT);
 
-    private float attackDamage, efficiency;
-    private int duriability, harvestLevel, enchantability;
+    private float attackDamage;
+    private float efficiency;
+    private int duriability;
+    private int harvestLevel;
+    private int enchantability;
     private Item repairMaterial;
 
     ToolMaterials(int harvestLevel, int durability, float efficiency, float attackDamage, int enchantability, Item repairMaterial)

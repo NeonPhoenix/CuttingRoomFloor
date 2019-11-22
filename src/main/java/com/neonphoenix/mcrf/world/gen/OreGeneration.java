@@ -10,7 +10,7 @@ import net.minecraft.world.gen.placement.CountRangeConfig;
 import net.minecraft.world.gen.placement.Placement;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class OreGeneration
+public abstract class OreGeneration
 {
     public static void init()
     {

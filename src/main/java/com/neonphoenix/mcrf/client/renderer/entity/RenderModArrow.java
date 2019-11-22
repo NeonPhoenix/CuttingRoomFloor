@@ -2,7 +2,6 @@ package com.neonphoenix.mcrf.client.renderer.entity;
 
 import net.minecraft.client.renderer.entity.EntityRendererManager;
 import net.minecraft.client.renderer.entity.TippedArrowRenderer;
-import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.util.ResourceLocation;
 

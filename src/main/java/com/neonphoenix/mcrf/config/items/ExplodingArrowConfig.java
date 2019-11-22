@@ -2,7 +2,7 @@ package com.neonphoenix.mcrf.config.items;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 
-public class ExplodingArrowConfig
+public abstract class ExplodingArrowConfig
 {
     public static ForgeConfigSpec.BooleanValue destroyBlocks;
 
