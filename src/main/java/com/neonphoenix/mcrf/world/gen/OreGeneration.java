@@ -1,4 +1,4 @@
-package com.neonphoenix.mcrf.world;
+package com.neonphoenix.mcrf.world.gen;
 
 import com.neonphoenix.mcrf.config.blocks.OreGenerationConfig;
 import com.neonphoenix.mcrf.lists.ModdedBlocks;
