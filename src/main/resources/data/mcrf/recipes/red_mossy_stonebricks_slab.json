@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mcrf:red_mossy_stonebricks"
+    }
+  },
+  "result": {
+    "item": "mcrf:red_mossy_stonebricks_slab",
+    "count": 6
+  }
+}

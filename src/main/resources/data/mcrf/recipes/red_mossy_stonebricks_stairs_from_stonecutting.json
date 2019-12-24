@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "mcrf:red_mossy_stonebricks"
+  },
+  "result": "mcrf:red_mossy_stonebricks_stairs",
+  "count": 1
+}
