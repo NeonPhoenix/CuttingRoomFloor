@@ -1,8 +1,7 @@
 package com.neonphoenix.mcrf.init;
 
 import com.neonphoenix.mcrf.MinecraftCuttingRoomFloor;
-import net.minecraft.block.Block;
-import net.minecraft.block.SoundType;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -13,6 +12,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.Logger;
+
+import java.util.function.Supplier;
 
 import static com.neonphoenix.mcrf.lists.MCRFBlocks.*;
 
@@ -34,7 +35,11 @@ public class ModdedBlocks
 
         //Building blocks
         RED_MOSSY_COBBLESTONE = registerBlock(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_cobblestone"));
-        RED_MOSSY_STONEBRICK = registerBlock(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_stonebrick"));
+        RED_MOSSY_COBBLESTONE_SLAB = registerSlabBlock(new SlabBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_cobblestone_slab"));
+        RED_MOSSY_COBBLESTONE_STAIRS = registerStairsBlock(new StairsBlock((Supplier<BlockState>) RED_MOSSY_COBBLESTONE.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_cobblestone_stairs"));
+        RED_MOSSY_COBBLESTONE_WALL = registerWallBlock(new WallBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_cobblestone_wall"));
+
+        RED_MOSSY_STONEBRICKS = registerBlock(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_stonebricks"));
 
         //Ore
         NETHER_GOLD_ORE = registerBlock(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)), location("nether_gold_ore"));
@@ -44,6 +49,42 @@ public class ModdedBlocks
     }
 
     public static Block registerBlock(Block block, ResourceLocation name)
+    {
+        BlockItem itemBlock = new BlockItem(block, new Item.Properties().group(creativeTab));
+        block.setRegistryName(name);
+        itemBlock.setRegistryName(name);
+
+        ForgeRegistries.BLOCKS.register(block);
+        ForgeRegistries.ITEMS.register(itemBlock);
+
+        return block;
+    }
+
+    public static SlabBlock registerSlabBlock(SlabBlock block, ResourceLocation name)
+    {
+        BlockItem itemSlab = new BlockItem(block, new Item.Properties().group(creativeTab));
+        block.setRegistryName(name);
+        itemSlab.setRegistryName(name);
+
+        ForgeRegistries.BLOCKS.register(block);
+        ForgeRegistries.ITEMS.register(itemSlab);
+
+        return block;
+    }
+
+    public static StairsBlock registerStairsBlock(StairsBlock block, ResourceLocation name)
+    {
+        BlockItem itemBlock = new BlockItem(block, new Item.Properties().group(creativeTab));
+        block.setRegistryName(name);
+        itemBlock.setRegistryName(name);
+
+        ForgeRegistries.BLOCKS.register(block);
+        ForgeRegistries.ITEMS.register(itemBlock);
+
+        return block;
+    }
+
+    public static WallBlock registerWallBlock(WallBlock block, ResourceLocation name)
     {
         BlockItem itemBlock = new BlockItem(block, new Item.Properties().group(creativeTab));
         block.setRegistryName(name);

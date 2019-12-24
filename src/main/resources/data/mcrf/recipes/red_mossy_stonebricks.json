@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:stone_bricks"
+    },
+    {
+      "item": "mcrf:red_moss"
+    }
+  ],
+  "result": {
+    "item": "mcrf:red_mossy_stonebricks"
+  }
+}

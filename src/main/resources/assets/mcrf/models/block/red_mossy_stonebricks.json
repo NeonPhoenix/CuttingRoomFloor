@@ -2,6 +2,6 @@
   "parent": "block/cube_all",
   "textures":
   {
-    "all": "mcrf:block/red_mossy_stonebrick"
+    "all": "mcrf:block/red_mossy_stonebricks"
   }
 }
