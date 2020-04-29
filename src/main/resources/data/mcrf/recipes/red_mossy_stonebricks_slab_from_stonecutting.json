@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "mcrf:red_mossy_stonebricks"
+    "item": "mcrf:red_mossy_stone_brick"
   },
-  "result": "mcrf:red_mossy_stonebricks_slab",
+  "result": "mcrf:red_mossy_stone_brick_slab",
   "count": 2
 }
