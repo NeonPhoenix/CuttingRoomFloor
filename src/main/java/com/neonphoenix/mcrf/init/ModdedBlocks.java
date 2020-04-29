@@ -39,10 +39,10 @@ public class ModdedBlocks
         RED_MOSSY_COBBLESTONE_STAIRS = registerStairsBlock(new StairsBlock(() -> RED_MOSSY_COBBLESTONE.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_cobblestone_stairs"));
         RED_MOSSY_COBBLESTONE_WALL = registerWallBlock(new WallBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_cobblestone_wall"));
 
-        RED_MOSSY_STONEBRICKS = registerBlock(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_stonebricks"));
-        RED_MOSSY_STONEBRICK_SLAB = registerSlabBlock(new SlabBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_stonebrick_slab"));
-        RED_MOSSY_STONEBRICK_STAIRS = registerStairsBlock(new StairsBlock(() -> RED_MOSSY_STONEBRICKS.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_stonebrick_stairs"));
-        RED_MOSSY_STONEBRICK_WALL = registerWallBlock(new WallBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_stonebrick_wall"));
+        RED_MOSSY_stone_brick = registerBlock(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_stone_brick"));
+        RED_MOSSY_stone_brick_SLAB = registerSlabBlock(new SlabBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_stone_brick_slab"));
+        RED_MOSSY_stone_brick_STAIRS = registerStairsBlock(new StairsBlock(() -> RED_MOSSY_stone_brick.getDefaultState(), Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_stone_brick_stairs"));
+        RED_MOSSY_stone_brick_WALL = registerWallBlock(new WallBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0f, 0.0f).sound(SoundType.STONE)), location("red_mossy_stone_brick_wall"));
 
         //Ore
         NETHER_GOLD_ORE = registerBlock(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)), location("nether_gold_ore"));
