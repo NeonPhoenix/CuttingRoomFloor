@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "mcrf:block/red_mossy_stonebricks",
+    "top": "mcrf:block/red_mossy_stonebricks",
+    "side": "mcrf:block/red_mossy_stonebricks"
+  }
+}

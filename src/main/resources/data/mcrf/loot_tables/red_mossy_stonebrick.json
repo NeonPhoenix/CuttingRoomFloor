@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "mcrf:red_mossy_stone_brick"
+          "name": "mcrf:red_mossy_stonebrick"
         }
       ],
       "conditions": [

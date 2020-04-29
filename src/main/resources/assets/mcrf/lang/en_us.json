@@ -17,15 +17,7 @@
   "item.mcrf.exploding_arrow": "Exploding Arrow",
 
   "block.mcrf.red_mossy_cobblestone": "Red Mossy Cobblestone",
-  "block.mcrf.red_mossy_cobblestone_slab": "Red Mossy Cobblestone Slab",
-  "block.mcrf.red_mossy_cobblestone_stairs": "Red Mossy Cobblestone Stair",
-  "block.mcrf.red_mossy_cobblestone_wall": "Red Mossy Cobblestone Wall",
-
-  "block.mcrf.red_mossy_stone_brick": "Red Mossy Stone Bricks",
-  "block.mcrf.red_mossy_stone_brick_slab": "Red Mossy Stone Brick Slab",
-  "block.mcrf.red_mossy_stone_brick_stairs": "Red Mossy Stone Brick Stair",
-  "block.mcrf.red_mossy_stone_brick_wall": "Red Mossy Stone Brick Wall",
-
+  "block.mcrf.red_mossy_stone_bricks": "Red Mossy Stone Bricks",
   "block.mcrf.nether_gold_ore": "Nether Gold Ore",
 
   "itemGroup.mcrf": "Cutting Room Floor"

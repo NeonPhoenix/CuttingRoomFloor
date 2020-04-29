@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "mcrf:red_mossy_stone_brick"
+      "item": "mcrf:red_mossy_stonebricks"
     }
   },
   "result": {
-    "item": "mcrf:red_mossy_stone_brick_stairs",
+    "item": "mcrf:red_mossy_stonebricks_stairs",
     "count": 4
   }
 }

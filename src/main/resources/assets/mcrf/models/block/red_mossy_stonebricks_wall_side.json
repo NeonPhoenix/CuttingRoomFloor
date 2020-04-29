@@ -1,6 +1,6 @@
 {
   "parent": "block/template_wall_side",
   "textures": {
-    "wall": "mcrf:block/red_mossy_stone_brick"
+    "wall": "mcrf:block/red_mossy_stonebricks"
   }
 }

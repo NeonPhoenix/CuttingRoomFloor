@@ -1,8 +1,0 @@
-{
-  "parent": "block/outer_stairs",
-  "textures": {
-    "bottom": "mcrf:block/red_mossy_stone_brick",
-    "top": "mcrf:block/red_mossy_stone_brick",
-    "side": "mcrf:block/red_mossy_stone_brick"
-  }
-}
