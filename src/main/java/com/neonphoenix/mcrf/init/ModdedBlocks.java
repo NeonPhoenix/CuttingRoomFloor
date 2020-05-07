@@ -1,9 +1,15 @@
 package com.neonphoenix.mcrf.init;
 
 import com.neonphoenix.mcrf.MinecraftCuttingRoomFloor;
-import com.neonphoenix.mcrf.blocks.*;
+import com.neonphoenix.mcrf.blocks.ColoredWoodenPlank;
+import com.neonphoenix.mcrf.blocks.ColoredWoodenSlab;
+import com.neonphoenix.mcrf.blocks.ColoredWoodenStair;
 
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.StairsBlock;
+import net.minecraft.block.WallBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.DyeColor;
