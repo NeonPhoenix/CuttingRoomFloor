@@ -2,6 +2,8 @@ package com.neonphoenix.mcrf.blocks;
 
 import com.neonphoenix.mcrf.objectholders.ColoredWoodenStairs;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.StairsBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.DyeColor;
 import net.minecraft.item.ItemGroup;
@@ -10,11 +12,11 @@ import net.minecraft.util.NonNullList;
 
 import java.util.stream.Stream;
 
-public class ColoredWoodenStair extends Block
+public class ColoredWoodenStair extends StairsBlock
 {
-    public ColoredWoodenStair(Material mat, DyeColor dyeColor)
+    public ColoredWoodenStair(Material mat, DyeColor dyeColor, java.util.function.Supplier<BlockState> state)
     {
-        super(Properties.create(mat, dyeColor).hardnessAndResistance(1.8F));
+        super(state, Properties.create(mat, dyeColor).hardnessAndResistance(1.8F));
     }
 
     public static Stream<Block> allBlocks()

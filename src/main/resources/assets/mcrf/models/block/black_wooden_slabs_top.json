@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "mcrf:block/black_wooden_planks",
+    "top": "mcrf:block/black_wooden_planks",
+    "side": "mcrf:block/black_wooden_planks"
+  }
+}
