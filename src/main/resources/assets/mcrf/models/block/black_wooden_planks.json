@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mcrf:block/black_wooden_planks"
+  }
+}
