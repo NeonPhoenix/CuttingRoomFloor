@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "mcrf:white_wooden_stairs",
+    "mcrf:orange_wooden_stairs",
+    "mcrf:magenta_wooden_stairs",
+    "mcrf:light_blue_wooden_stairs",
+    "mcrf:yellow_wooden_stairs",
+    "mcrf:lime_wooden_stairs",
+    "mcrf:pink_wooden_stairs",
+    "mcrf:gray_wooden_stairs",
+    "mcrf:light_gray_wooden_stairs",
+    "mcrf:cyan_wooden_stairs",
+    "mcrf:purple_wooden_stairs",
+    "mcrf:blue_wooden_stairs",
+    "mcrf:brown_wooden_stairs",
+    "mcrf:green_wooden_stairs",
+    "mcrf:red_wooden_stairs",
+    "mcrf:black_wooden_stairs"
+  ]
+}

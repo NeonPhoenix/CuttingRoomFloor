@@ -55,6 +55,7 @@ public class ModdedBlocks
         Stream.of(DyeColor.values()).forEach(dyeColor -> {
             registerBlock(new ColoredWoodenPlank(Material.WOOD, dyeColor), location(dyeColor + "_wooden_planks"));
             registerBlock(new ColoredWoodenSlab(Material.WOOD, dyeColor), location(dyeColor + "_wooden_slabs"));
+            registerBlock(new ColoredWoodenStair(Material.WOOD, dyeColor), location(dyeColor + "_wooden_stairs"));
         });
 
         log.info("Blocks registered.");

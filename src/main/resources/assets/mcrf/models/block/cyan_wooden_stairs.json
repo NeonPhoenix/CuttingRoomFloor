@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "mcrf:block/cyan_wooden_planks",
+    "top": "mcrf:block/cyan_wooden_planks",
+    "side": "mcrf:block/cyan_wooden_planks"
+  }
+}
