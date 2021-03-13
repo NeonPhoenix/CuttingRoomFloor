@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "crf:block/blue_wooden_planks",
+    "top": "crf:block/blue_wooden_planks",
+    "side": "crf:block/blue_wooden_planks"
+  }
+}

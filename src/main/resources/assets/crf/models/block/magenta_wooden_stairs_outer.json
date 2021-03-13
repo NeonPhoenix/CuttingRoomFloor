@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "crf:block/magenta_wooden_planks",
+    "top": "crf:block/magenta_wooden_planks",
+    "side": "crf:block/magenta_wooden_planks"
+  }
+}

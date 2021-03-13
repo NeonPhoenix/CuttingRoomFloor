@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "crf:white_wooden_slabs",
+    "crf:orange_wooden_slabs",
+    "crf:magenta_wooden_slabs",
+    "crf:light_blue_wooden_slabs",
+    "crf:yellow_wooden_slabs",
+    "crf:lime_wooden_slabs",
+    "crf:pink_wooden_slabs",
+    "crf:gray_wooden_slabs",
+    "crf:light_gray_wooden_slabs",
+    "crf:cyan_wooden_slabs",
+    "crf:purple_wooden_slabs",
+    "crf:blue_wooden_slabs",
+    "crf:brown_wooden_slabs",
+    "crf:green_wooden_slabs",
+    "crf:red_wooden_slabs",
+    "crf:black_wooden_slabs"
+  ]
+}

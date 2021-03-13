@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "crf:block/light_blue_wooden_planks"
+  }
+}

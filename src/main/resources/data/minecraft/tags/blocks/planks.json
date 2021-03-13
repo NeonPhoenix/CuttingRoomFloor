@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "crf:white_wooden_planks",
+    "crf:orange_wooden_planks",
+    "crf:magenta_wooden_planks",
+    "crf:light_blue_wooden_planks",
+    "crf:yellow_wooden_planks",
+    "crf:lime_wooden_planks",
+    "crf:pink_wooden_planks",
+    "crf:gray_wooden_planks",
+    "crf:light_gray_wooden_planks",
+    "crf:cyan_wooden_planks",
+    "crf:purple_wooden_planks",
+    "crf:blue_wooden_planks",
+    "crf:brown_wooden_planks",
+    "crf:green_wooden_planks",
+    "crf:red_wooden_planks",
+    "crf:black_wooden_planks"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "crf:block/lime_wooden_planks",
+    "top": "crf:block/lime_wooden_planks",
+    "side": "crf:block/lime_wooden_planks"
+  }
+}

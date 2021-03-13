@@ -1,0 +1,6 @@
+{
+  "variants":
+  {
+    "": {"model": "crf:block/nether_gold_ore"}
+  }
+}
