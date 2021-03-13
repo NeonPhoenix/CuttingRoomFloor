@@ -10,10 +10,14 @@ on:
     branches: [ master ]
 
 jobs:
+  validate:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Gradle Wrapper Validation
+        uses: gradle/wrapper-validation-action@v1.0.3
+
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
