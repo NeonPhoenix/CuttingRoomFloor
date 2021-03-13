@@ -1,7 +1,7 @@
 # This workflow will build a Java project with Gradle
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-gradle
 
-name: CI for CuttingRoomFloor
+name: Java CI 
 
 on:
   push:
@@ -14,27 +14,31 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-    - name: Build with Gradle
-      run: ./gradlew build
-
-  release:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Upload files to a GitHub release
-      # You may pin to the exact commit or the version.
-      # uses: svenstaro/upload-release-action@483c1e56f95e88835747b1c7c60581215016cbf2
-      uses: svenstaro/upload-release-action@2.2.1
-      with:
-        # GitHub token.
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        # Local file to upload.
-        file: build\libs\CuttingRoomFloor-1.14.4-1.0.0.0.jar
-        # Tag to use as a release.
-        tag: 1.14.4
+      - uses: actions/checkout@v2
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+      - name: Cache Gradle packages
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+      - name: Build with Gradle
+        run: ./gradlew build
+      - name: Cleanup Gradle Cache
+        # Remove some files from the Gradle cache, so they aren't cached by GitHub Actions.
+        # Restoring these files from a GitHub Actions cache might cause problems for future builds.
+        run: |
+          rm -f ~/.gradle/caches/modules-2/modules-2.lock
+          rm -f ~/.gradle/caches/modules-2/gc.properties
+      - name: Package workflow artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Package
+          path: build/libs
+          
