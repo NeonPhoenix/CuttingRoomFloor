@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "crf:block/lime_wooden_slabs" },
+    "type=top": { "model": "crf:block/lime_wooden_slabs_top" },
+    "type=double": { "model": "crf:block/lime_wooden_planks" }
+  }
+}

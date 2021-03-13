@@ -1,0 +1,6 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "crf:block/red_mossy_stone_brick"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "mcrf:block/red_mossy_cobblestone",
-    "top": "mcrf:block/red_mossy_cobblestone",
-    "side": "mcrf:block/red_mossy_cobblestone"
-  }
-}

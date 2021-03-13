@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "crf:block/white_wooden_planks",
+    "top": "crf:block/white_wooden_planks",
+    "side": "crf:block/white_wooden_planks"
+  }
+}

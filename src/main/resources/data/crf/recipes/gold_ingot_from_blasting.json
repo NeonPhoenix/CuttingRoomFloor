@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "crf:nether_gold_ore"
+  },
+  "result": {
+    "item": "minecraft:gold_ingot",
+    "count": 2
+  },
+  "experience": 1.4,
+  "cookingtime": 100
+}

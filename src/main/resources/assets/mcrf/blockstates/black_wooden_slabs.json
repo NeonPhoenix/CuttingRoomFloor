@@ -1,7 +1,0 @@
-{
-  "variants": {
-    "type=bottom": { "model": "mcrf:block/black_wooden_slabs" },
-    "type=top": { "model": "mcrf:block/black_wooden_slabs_top" },
-    "type=double": { "model": "mcrf:block/black_wooden_planks" }
-  }
-}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "crf:block/red_wooden_slabs" },
+    "type=top": { "model": "crf:block/red_wooden_slabs_top" },
+    "type=double": { "model": "crf:block/red_wooden_planks" }
+  }
+}

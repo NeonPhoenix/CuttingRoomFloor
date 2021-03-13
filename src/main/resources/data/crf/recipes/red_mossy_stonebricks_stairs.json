@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "crf:red_mossy_stone_brick"
+    }
+  },
+  "result": {
+    "item": "crf:red_mossy_stone_brick_stairs",
+    "count": 4
+  }
+}

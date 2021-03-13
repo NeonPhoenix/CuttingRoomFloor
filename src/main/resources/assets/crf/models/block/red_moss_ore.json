@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures":
+  {
+    "all": "crf:block/red_moss_ore"
+  }
+}

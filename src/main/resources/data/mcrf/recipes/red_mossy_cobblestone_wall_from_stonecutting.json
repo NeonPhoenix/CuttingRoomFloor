@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "mcrf:red_mossy_cobblestone"
-  },
-  "result": "mcrf:red_mossy_cobblestone_wall",
-  "count": 1
-}

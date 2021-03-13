@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "crf:red_moss"
+    }
+  ],
+  "result": {
+    "item": "crf:red_mossy_cobblestone"
+  }
+}
