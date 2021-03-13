@@ -11,7 +11,8 @@ on:
 
 jobs:
 
-  Build_and_Upload_Package:
+  build_upload:
+    name: Build and Upload Package
     runs-on: ubuntu-latest
     steps:
     - name: Set up repo
