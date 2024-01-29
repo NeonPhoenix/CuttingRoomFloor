@@ -156,6 +156,6 @@ plugins {
 sonar {
   properties {
     property "sonar.projectKey", "Neon_CuttingRoomFloor_AY02jN-kAGd1IaTT4LuF"
-    property "sonar.projectName", "CuttingRoomFloor "
+    property "sonar.projectName", "CuttingRoomFloor"
   }
 }
