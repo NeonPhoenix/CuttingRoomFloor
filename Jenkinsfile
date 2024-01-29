@@ -5,7 +5,7 @@ node {
   stage('SonarQube Analysis') {
     withSonarQubeEnv() {
       sh "chmod +x gradlew"
-      sh "./gradlew sonar"
+      sh "./gradlew sonar --no-daemon"
     }
   }
 }
